@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c,magicalitem=0,jewel=0;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a%2==0)
+    {
+        if(a>0)
+        magicalitem++;
+        else
+        jewel++;
+    }
+    else if(a<0)
+    {
+        jewel++;
+    }
+    if(b%2==0)
+    {
+        if(b>0)
+        magicalitem++;
+        else
+        jewel++;
+    }
+    else if(b<0)
+    {
+        jewel++;
+    }
+    if(c%2==0)
+    {
+        if(c>0)
+        magicalitem++;
+        else
+        jewel++;
+    }
+    else if(c<0)
+    {
+        jewel++;
+    }
+    if(magicalitem==1 && jewel==1)
+    printf("YES");
+    else if(magicalitem>=2)
+    printf("YES");
+    else
+    printf("NO");
+}
